@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- 导航栏 -->
+  <!-- 导航栏（和首页一致） -->
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="logo">
@@ -25,67 +25,76 @@
     </div>
   </nav>
 
-  <!-- 产品页首屏 -->
-  <section class="hero" style="height: 50vh;">
-    <div class="hero-bg" style="background: url('assets/images/server_banner.jpg') center/cover no-repeat;">
-      <div class="hero-content">
-        <h1>产品矩阵</h1>
-        <p>四大系列，全方位满足绿色IT需求</p>
-      </div>
+  <!-- 顶部标题区：带背景图hero2.jpg -->
+<section class="product-hero">
+  <div class="product-hero-bg" style="background-image: url('assets/images/hero2.jpg'); background-size: cover; background-position: center; width:100%; height:100%;">
+    <div class="product-hero-content">
+      <h1 class="product-title">产品矩阵</h1>
+      <p class="product-subtitle">四大系列，全方位满足绿色IT需求</p >
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 产品详情板块 -->
-  <section class="products section-padding">
-    <div class="container">
-      <div id="co-branded" class="product-section">
-        <h2 class="section-title">联名设计款</h2>
-        <div class="product-grid">
-          <div class="product-card">
-            <img src="assets/images/product1.jpg" alt="联名设计款">
-            <h3>非遗竹编联名机箱</h3>
-            <p>结合传统竹编工艺与现代科技美学，限量款机箱，兼具环保与艺术价值</p>
-          </div>
-        </div>
+  <main class="container">
+    <!-- 1. 联名设计款 -->
+    <section class="product-category">
+      <div class="category-header">
+        <h2>联名设计款</h2>
+        <p>非遗竹编 × 现代科技美学，限量联名，高端溢价</p>
       </div>
-
-      <div id="oem" class="product-section section-padding bg-light">
-        <h2 class="section-title">品牌定制代工款</h2>
-        <div class="product-grid">
-          <div class="product-card">
-            <img src="assets/images/product2.jpg" alt="机架式服务器外壳">
-            <h3>机架式服务器外壳</h3>
-            <p>标准1U/2U规格，竹塑复合材料外壳，批量供应，支持品牌定制</p>
-          </div>
-        </div>
+      <div class="grid-2x2">
+        <div class="grid-item"><img src="assets/images/l1.jpg" alt="联名款1"></div>
+        <div class="grid-item"><img src="assets/images/l2.jpg" alt="联名款2"></div>
+        <div class="grid-item"><img src="assets/images/l3.jpg" alt="联名款3"></div>
+        <div class="grid-item"><img src="assets/images/l4.jpg" alt="联名款4"></div>
       </div>
+    </section>
 
-      <div id="fullpc" class="product-section section-padding">
-        <h2 class="section-title">整机定制组装</h2>
-        <div class="product-grid">
-          <div class="product-card">
-            <img src="assets/images/product3.jpg" alt="陶瓷水冷电竞主机">
-            <h3>陶瓷水冷电竞主机</h3>
-            <p>搭载自研陶瓷浸液式水冷技术，高性能散热，搭配竹塑外壳，环保又强悍</p>
-          </div>
-        </div>
+    <!-- 2. 品牌定制代工款 -->
+    <section class="product-category">
+      <div class="category-header">
+        <h2>品牌定制代工款</h2>
+        <p>ATX/ITX/服务器面板，批量供应，原位替代</p>
       </div>
-
-      <div id="accessories" class="product-section section-padding bg-light">
-        <h2 class="section-title">IT产品配饰</h2>
-        <div class="product-grid">
-          <div class="product-card">
-            <img src="assets/images/product4.jpg" alt="竹塑手机壳">
-            <h3>竹塑环保手机壳</h3>
-            <p>100%可降解竹塑材质，轻薄防摔，多种机型适配</p>
-          </div>
-        </div>
+      <div class="grid-2x2">
+        <div class="grid-item"><img src="assets/images/b1.jpg" alt="代工款1"></div>
+        <div class="grid-item"><img src="assets/images/b2.jpg" alt="代工款2"></div>
+        <div class="grid-item"><img src="assets/images/b3.jpg" alt="代工款3"></div>
+        <div class="grid-item"><img src="assets/images/b4.jpg" alt="代工款4"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 底部信息栏 -->
-  <footer class="footer">
+    <!-- 3. 整机定制组装 -->
+    <section class="product-category">
+      <div class="category-header">
+        <h2>整机定制组装</h2>
+        <p>水冷电竞主机 · 设计师工作站 · 陶瓷散热旗舰</p>
+      </div>
+      <div class="grid-2x2">
+        <div class="grid-item"><img src="assets/images/a1.jpg" alt="整机款1"></div>
+        <div class="grid-item"><img src="assets/images/a2.jpg" alt="整机款2"></div>
+        <div class="grid-item"><img src="assets/images/a3.jpg" alt="整机款3"></div>
+        <div class="grid-item"><img src="assets/images/a4.jpg" alt="整机款4"></div>
+      </div>
+    </section>
+
+    <!-- 4. IT产品配饰 -->
+    <section class="product-category">
+      <div class="category-header">
+        <h2>IT产品配饰</h2>
+        <p>手机壳、鼠标垫、键盘托……把竹林带在身边</p>
+      </div>
+      <div class="grid-2x2">
+        <div class="grid-item"><img src="assets/images/m1.jpg" alt="配饰1"></div>
+        <div class="grid-item"><img src="assets/images/m2.jpg" alt="配饰2"></div>
+        <div class="grid-item"><img src="assets/images/m3.jpg" alt="配饰3"></div>
+        <div class="grid-item"><img src="assets/images/m4.jpg" alt="配饰4"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 底部 -->
+  <footer id="about" class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-about">
@@ -109,7 +118,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 竹塑新生 · 2026中国国际大学生创新大赛参赛项目</p>
+        <p>© 2026 竹塑新生 · 2026中国国际大学生创新大赛参赛项目 </p>
       </div>
     </div>
   </footer>

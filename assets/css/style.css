@@ -368,3 +368,100 @@ body {
     text-align: center;
   }
 }
+
+/* =====================================
+   产品矩阵页专属样式
+   ===================================== */
+/* 顶部标题区 */
+.product-hero {
+  height: 50vh;
+  position: relative;
+}
+.product-hero-bg {
+  width: 100%;
+  height: 100%;
+  /*background: url('./assets/images/hero2.jpg') center/cover no-repeat;*/
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 半透明遮罩，让文字更清晰 */
+.product-hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.product-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--white);
+}
+.product-title {
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 16px;
+}
+.product-subtitle {
+  font-size: 20px;
+  color: var(--white);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 产品分类板块 */
+.product-category {
+  margin: 60px 0;
+  padding: 32px;
+  background-color: #f8f8f8;
+  border-radius: 16px;
+}
+.category-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.category-header h2 {
+  font-size: 28px;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+.category-header p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+/* 田字格布局（2x2） */
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid-item {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.grid-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 36px;
+  }
+  .grid-2x2 {
+    grid-template-columns: 1fr;
+  }
+}
