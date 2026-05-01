@@ -25,66 +25,98 @@
     </div>
   </nav>
 
-  <!-- 技术页首屏 -->
-  <section class="hero" style="height: 50vh;">
-    <div class="hero-bg" style="background: url('assets/images/bamboo_bg.jpg') center/cover no-repeat;">
-      <div class="hero-content">
-        <h1>核心技术</h1>
-        <p>专利加持，创新突破</p>
+  <!-- 顶部标题区：带hero2.jpg背景 -->
+  <section class="tech-hero">
+    <div class="tech-hero-bg" style="background-image: url('assets/images/hero3.jpg'); background-size: cover; background-position: center; width:100%; height:100%;">
+      <div class="tech-hero-content">
+        <h1 class="tech-title">核心技术</h1>
+        <p class="tech-subtitle">专利加持，创新突破</p>
       </div>
     </div>
   </section>
 
-  <!-- 技术板块 -->
-  <section class="section-padding">
-    <div class="container">
+  <main class="container">
+    <!-- 三大核心技术 -->
+    <section class="tech-section">
       <h2 class="section-title">三大核心技术</h2>
-      <div class="features-grid">
-        <div class="feature-item">
-          <i class="fas fa-seedling"></i>
-          <h3>竹纤维生物基复合材料</h3>
-          <p>自主研发配方，竹粉含量65%+，高性能、可降解，替代传统ABS塑料</p>
+      <div class="tech-grid">
+        <!-- 1. 竹纤维生物基复合材料 -->
+        <div class="tech-card interactive-tech">
+          <div class="tech-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="tech-text">
+            <h3>竹纤维生物基复合材料</h3>
+            <p>自主研发配方，竹粉含量65%+，高性能、可降解，替代传统ABS塑料，减碳效果显著，已通过工业堆肥降解认证。</p>
+          </div>
+          <div class="tech-img">
+            <img src="assets/images/c1.jpg" alt="竹纤维材料">
+          </div>
         </div>
-        <div class="feature-item">
-          <i class="fas fa-cogs"></i>
-          <h3>高精度自动化加工装置</h3>
-          <p>实用新型专利技术，自动化加工，精度±0.1mm，适配现有产线</p>
+
+        <!-- 2. 高精度自动化加工装置 -->
+        <div class="tech-card interactive-tech">
+          <div class="tech-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="tech-text">
+            <h3>高精度自动化加工装置</h3>
+            <p>实用新型专利技术，自动化加工，精度±0.1mm，适配现有产线，大幅降低生产门槛，实现批量化稳定生产。</p>
+          </div>
+          <div class="tech-img">
+            <img src="assets/images/c2.jpg" alt="加工装置">
+          </div>
         </div>
-        <div class="feature-item">
-          <i class="fas fa-water"></i>
-          <h3>陶瓷浸液式水冷技术</h3>
-          <p>发明专利技术，高效散热，解决高密度服务器散热难题</p>
+
+        <!-- 3. 陶瓷浸液式水冷技术 -->
+        <div class="tech-card interactive-tech">
+          <div class="tech-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <div class="tech-text">
+            <h3>陶瓷浸液式水冷技术</h3>
+            <p>发明专利技术，高效散热，解决高密度服务器散热难题，适配竹塑外壳的特殊结构，散热效率提升30%。</p>
+          </div>
+          <div class="tech-img">
+            <img src="assets/images/c3.jpg" alt="水冷技术">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 专利展示板块 -->
-  <section class="section-padding bg-light">
-    <div class="container">
+    <!-- 专利成果 -->
+    <section class="patent-section">
       <h2 class="section-title">专利成果</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="assets/images/patent1.jpg" alt="专利1">
-          <h3>IT产品用竹材料加工装置</h3>
-          <p>实用新型专利，专利申请号：2024205637689</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/patent2.jpg" alt="专利2">
-          <h3>陶瓷材料浸液式水冷服务器</h3>
-          <p>实用新型专利，专利申请号：2024205638376</p>
-        </div>
-        <div class="product-card">
-          <img src="assets/images/patent4.jpg" alt="专利3">
-          <h3>涂料调制生产装置</h3>
-          <p>实用新型专利，专利申请号：ZL202430147109.2</p>
-        </div>
+      <p class="patent-intro">
+        团队目前已获得实用新型专利2项、外观设计专利1项，另有多项发明专利正在实质审查阶段。
+        核心材料配方、加工工艺、散热技术均拥有自主知识产权，为项目产业化落地提供了坚实的技术壁垒。
+      </p>
+      <div class="patent-stack">
+        <!-- 重叠排版的18张证书 -->
+        <img src="assets/images/patent1.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 0; left: 0;">
+        <img src="assets/images/patent2.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 10px; left: 20px;">
+        <img src="assets/images/patent3.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 20px; left: 40px;">
+        <img src="assets/images/patent4.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 30px; left: 60px;">
+        <img src="assets/images/patent5.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 40px; left: 80px;">
+        <img src="assets/images/patent6.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 50px; left: 100px;">
+        <img src="assets/images/patent7.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 60px; left: 120px;">
+        <img src="assets/images/patent8.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 70px; left: 140px;">
+        <img src="assets/images/patent9.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 80px; left: 160px;">
+        <img src="assets/images/patent10.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 90px; left: 180px;">
+        <img src="assets/images/patent11.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 100px; left: 200px;">
+        <img src="assets/images/patent12.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 110px; left: 220px;">
+        <img src="assets/images/patent13.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 120px; left: 240px;">
+        <img src="assets/images/patent14.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 130px; left: 260px;">
+        <img src="assets/images/patent15.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 140px; left: 280px;">
+        <img src="assets/images/patent16.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 150px; left: 300px;">
+        <img src="assets/images/patent17.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 160px; left: 320px;">
+        <img src="assets/images/patent18.jpg" alt="专利证书" class="patent-img interactive-patent" style="top: 170px; left: 340px;">
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- 底部信息栏 -->
-  <footer class="footer">
+  <!-- 底部 -->
+  <footer id="about" class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-about">
@@ -108,7 +140,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 竹塑新生 · 2026中国国际大学生创新大赛参赛项目</p>
+        <p>© 2026 竹塑新生 · 2026中国国际大学生创新大赛参赛项目 </p>
       </div>
     </div>
   </footer>
