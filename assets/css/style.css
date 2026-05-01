@@ -385,7 +385,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-/* 半透明遮罩，让文字更清晰 */
 .product-hero-bg::after {
   content: '';
   position: absolute;
@@ -436,29 +435,41 @@ body {
   font-size: 16px;
 }
 
-/* 田字格布局（2x2，图片放大优化） */
+/* 田字格布局（优化白边+交互效果） */
 .grid-2x2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px; /* 增大间距，避免图片挤在一起 */
+  gap: 24px;
 }
 .grid-item {
   border-radius: 12px;
   overflow: hidden;
   background-color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  /* 增大高度，让图片完整显示 */
   height: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* 过渡动画基础 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .grid-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* 改为contain，完整显示图片，不会裁剪 */
+  /* 改为cover，填满容器，消除白边 */
+  object-fit: cover;
   display: block;
-  padding: 8px; /* 给图片加一点内边距，避免贴边 */
+}
+
+/* 交互效果：hover上浮+阴影 */
+.interactive-img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* 点击放大效果 */
+.interactive-img:active {
+  transform: scale(0.98);
 }
 
 /* 响应式适配 */
@@ -470,6 +481,6 @@ body {
     grid-template-columns: 1fr;
   }
   .grid-item {
-    height: 300px; /* 移动端适当降低高度 */
+    height: 300px;
   }
 }
